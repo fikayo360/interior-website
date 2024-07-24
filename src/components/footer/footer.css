@@ -1,0 +1,95 @@
+#footer{
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    border-top: 0.5px solid grey;
+    display: flex;
+    padding: 1rem 0;
+    background: #000;
+    padding-top: 3rem;
+}
+
+#footer p,#footer ul li,#fLead{
+    color: #ffffff;
+}
+#fLead{
+    margin: 0;
+    
+}
+
+#fWrap{
+    width: 90%;
+    gap: 1rem;
+    display: flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fWrap ul{
+    gap: 0.3rem;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#fWrap ul li a{
+    font-size: clamp(0.8rem, 5vw + 1rem, 1.5rem);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#fWrap ul li a:hover{
+    transition: color 0.3s ease-in;
+    color: #494747;
+}
+
+.fitems{
+    width:20%;
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fitems h1,#fLead{
+    font-size: clamp(1.4rem, 5vw + 1rem, 1.8rem);
+    margin: 0;
+    color: #ffffff;
+}
+
+.fitems p{
+    font-size: clamp(0.8rem, 5vw + 1rem, 1.5rem);
+    text-align: left;
+}
+
+
+@media (min-width: 250px) and (max-width: 1024px){
+    #fWrap{
+        padding-left: 2rem;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    #fWrap ul li a,.fitems p{
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 640px){
+    .fitems{
+        width:90%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px){
+    .fitems{
+        width:43%;
+    }
+}

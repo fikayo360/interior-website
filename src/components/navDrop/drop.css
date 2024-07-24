@@ -1,0 +1,64 @@
+.drop{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transform: translateY(-100%);
+    padding-top: 2rem;
+    padding-left: 2rem;
+    transition: transform 2s ease-out;
+}
+
+.drop h1{
+    font-size: 8rem;
+    color: #ffffff;
+}
+
+.dropActive{
+    transform: translateY(0);
+    transition: transform 2s ease-in;
+}
+
+#dropList{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    padding-left: 2rem;
+    padding-top: 4rem;
+    margin: 0;
+}
+
+#dropList li{
+    cursor: pointer;
+}
+
+#dropList li a{
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw + 1rem, 5rem);
+    font-weight: bold;
+}
+
+#dropList li a:hover{
+    color: rgb(120, 49, 187);
+}
+
+.active{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px){
+    /* #drop{
+        display: flex;
+    } */
+}

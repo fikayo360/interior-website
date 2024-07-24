@@ -1,0 +1,37 @@
+.menuButton {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 2px;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .menuButton span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menuButton.menuOpen span:nth-child(1) {
+    transform: translate3d(0,4px,0) rotate(-45deg);
+  }
+  
+  .menuButton.menuOpen span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  
+  .menuButton.menuOpen span:nth-child(3) {
+    transform: translate3d(0,-6px,0) rotate(45deg);
+  }
+
+  @media (min-width: 250px) and (max-width: 1024px){
+    .menuButton {
+        display: flex;
+      }
+    
+  }

@@ -1,0 +1,174 @@
+#moreInfo{
+  width: 100vw;
+  height: auto;
+  border-top: 0.5px solid black;
+}
+
+#info1,#info2,#info3,#info4{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+#info1 #left,#info1 #right{
+  width: 50%;
+  height: auto;
+} 
+
+#info2 #left,#info2 #right{
+  width: 50%;
+  height: auto;
+} 
+
+#info3 #slideContainer,#info3 #right{
+  width: 50%;
+  height: auto;
+}
+
+#info4 #left, #info4 #right{
+  width: 50%;
+  height: auto;
+}
+
+#info1 #right{
+object-fit: cover;
+}
+
+#info1 #right img{
+  width: 100%;
+  height: 100%;
+}
+
+#info2 #left{
+  object-fit: cover;
+  }
+  
+  #info2 #left img{
+    width: 100%;
+    height: 100%;
+  }
+
+#info3 #right{
+  object-fit: cover;
+  }
+  
+#info3 #right img{
+  width: 100%;
+  height: 100%;
+}
+
+#info4 #left{
+  object-fit: cover;
+}
+
+#info4 #left img{
+  width: 100%;
+  height: 100%;
+}
+
+#info1 #left, #info2 #right,#slideContainer,#info4 #right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.slide{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.slideB{
+  color: rgb(44, 43, 43);
+  font-size: clamp(1.2rem, 4vw + 1rem, 1.5rem);
+}
+
+#testH{
+  margin-bottom: 3rem;
+  text-decoration: underline;
+}
+
+#simg{
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+.slide h1{
+  margin: 0;
+}
+
+.slide p{
+  width:70%;
+}
+
+#info1 #left h1, #info2 #right h1, #info4 #right h1{
+  font-weight: bold;
+  margin: 0;
+  font-size: clamp(2.5rem, 7vw + 1rem, 8.5rem);
+  width: 90%;
+  text-align: center;
+}
+
+#info1 #left, #info2 #right, #info4 #right{
+  padding: 2rem 0;
+}
+
+#info1 #left a, #info2 #right a, #info4 #right a{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+  
+  @media (min-width: 250px) and (max-width: 1024px){
+    #info1,#info3{
+      flex-direction: column;
+    }
+
+    #info2,#info4{
+      flex-direction: column-reverse;
+    }
+    
+    #info1 #left,#info1 #right{
+      width: 100%;
+      height: auto;
+    } 
+    
+    #info2 #left,#info2 #right{
+      width: 100%;
+      height: auto;
+    } 
+    
+    .slide {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      padding: 2rem 0;
+  }
+
+    #info3 #slideContainer,#info3 #right{
+      width: 100%;
+      height: auto;
+    }
+    
+    #info4 #left, #info4 #right{
+      width: 100%;
+      height: 80%;
+    }
+
+
+  }
+  
