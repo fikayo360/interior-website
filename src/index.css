@@ -31,6 +31,8 @@ body {
   background-color:hsl(240, 33%, 98%);
   font-size: clamp(1rem, 1vw + 1rem, 1.2rem);
   line-height: clamp(1.4, 1.5vw + 1.2, 1.8);
+  /* transform: scale(0.9);  */
+  /* transform-origin: top left;  */
 }
 
 body::-webkit-scrollbar {
